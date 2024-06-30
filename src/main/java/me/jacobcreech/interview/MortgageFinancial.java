@@ -1,6 +1,6 @@
 package me.jacobcreech.interview;
 
-import javax.swing.JOptionPane;
+import me.jacobcreech.store.MatrixManager;
 
 /**
  * The main program's class.
@@ -8,18 +8,14 @@ import javax.swing.JOptionPane;
 public class MortgageFinancial {
 
 	/**
-	 * The main program's method. Every Java program has this method.
-	 * Your entire program starts here.
-	 *
-	 * Example: When you start your Minecraft, it too uses this method
-	 * to initialise everything and make sure the program then runs
-	 * indefinitely until you close it.
+	 * Some simple description of the point of the program
 	 *
 	 * @param args
 	 */
 	public static void main(String[] args) {
-
-		// Simple method to show a closeable dialog
-		JOptionPane.showMessageDialog(null, "Java is fun");
+		
+		MatrixManager mgr = new MatrixManager();
+		mgr.manageMatrix();
+		System.out.println("Please work like a champ");
 	}
 }
